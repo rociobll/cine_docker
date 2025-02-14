@@ -1,12 +1,12 @@
 services:
   db:
-    image: rociobll/mi_cine_docker:v1
+    image: rociobll/cine_docker:v1
     container_name: contenedorMiCine
     ports:
       - "3306:3306"
 
   php:
-    image: rociobll/mi_app_cine_docker:v1
+    image: rociobll/cine_docker:v1
     container_name: contenedorMiApp
     ports:
       - "8080:80"
