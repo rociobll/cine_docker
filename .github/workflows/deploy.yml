@@ -31,7 +31,7 @@ jobs:
       # Construir y subir la imagen de la aplicación
       - name: Build and push PHP Docker image
         run: |
-          cd php
+          cd app
           docker build -t ${{ secrets.DOCKER_USERNAME }}/mi_app_cine:v1 .
           docker push ${{ secrets.DOCKER_USERNAME }}/mi_app_cine:v1
 
